@@ -6,10 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
     <title>Book a Service | AutoCare</title>
-
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -17,7 +14,6 @@
     <link rel="stylesheet" href="css/booking.css">
 
 </head>
-
 
 <body>
     <header class="header">
@@ -56,7 +52,11 @@
     </section>
 
     <main class="booking-section">
-        <div class="container booking-layout">
+        
+        <form action="../Backend/saveBooking.php" method="POST" class="container booking-layout">
+            
+            <input type="hidden" id="serviceKeyInput" name="service" value="full-engine">
+
             <div class="booking-form-card">
                 <div class="form-header">
                     <span class="section-tag">BOOKING INFORMATION</span>
@@ -237,7 +237,7 @@
                     </div>
                 </div>
             </aside>
-        </div>
+        </form>
     </main>
 
     <footer class="footer">
@@ -272,6 +272,16 @@
 
     <script src="../Backend/booking.js"></script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const serviceKey = urlParams.get('service') || 'full-engine';
+            const hiddenInput = document.getElementById('serviceKeyInput');
+            if (hiddenInput) {
+                hiddenInput.value = serviceKey;
+            }
+        });
+    </script>
 </body>
 
 </html>
