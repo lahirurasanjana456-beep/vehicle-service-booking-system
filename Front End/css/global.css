@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 html {
@@ -30,4 +31,15 @@ img {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
