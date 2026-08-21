@@ -20,1064 +20,257 @@
 
 
 <body>
-
     <header class="header">
-
-
-
         <div class="container navbar">
-
-
-
             <a href="index.html" class="logo">
-
                 <span class="logo-icon">⚙</span>
-
                 <span>AutoCare</span>
-
             </a>
-
 
             <nav class="nav-links">
-
-
-
-                <a href="index.html">
-
-                    Home
-
-                </a>
-
-                <a href="index.html#services" class="active">
-
-                    Services
-
-                </a>
-
-                <a href="index.html#about">
-
-                    About Us
-
-                </a>
-
-                <a href="index.html#contact">
-
-                    Contact
-
-                </a>
-
+                <a href="index.html">Home</a>
+                <a href="index.html#services" class="active">Services</a>
+                <a href="index.html#about">About Us</a>
+                <a href="index.html#contact">Contact</a>
             </nav>
 
-
             <a href="index.html#services" class="nav-button">
-
                 Book a Service
-
             </a>
-
         </div>
-
     </header>
 
     <section class="page-header">
-
         <div class="container">
-
             <div class="breadcrumb">
-
-                <a href="index.html">
-
-                    Home
-
-                </a>
-
+                <a href="index.html">Home</a>
                 <span>›</span>
-
-
-                <a href="service-details.html">
-
-                    Service Details
-
-                </a>
-
+                <a id="breadcrumb-service-link" href="serviceDetails.html">Service Details</a>
                 <span>›</span>
-
                 <span>Booking</span>
-
             </div>
 
-
-            <h1>
-
-                Book Your Service
-
-            </h1>
-
-
-            <p>
-
-                Enter your details and choose a convenient date
-
-                for your vehicle service.
-
-            </p>
-
-
+            <h1>Book Your Service</h1>
+            <p>Enter your details and choose a convenient date for your vehicle service.</p>
         </div>
-
-
     </section>
 
     <main class="booking-section">
-
         <div class="container booking-layout">
-
             <div class="booking-form-card">
-
-
-
                 <div class="form-header">
-
-
-
-                    <span class="section-tag">
-
-                        BOOKING INFORMATION
-
-                    </span>
-
-
-                    <h2>
-
-                        Tell Us About Yourself
-
-                    </h2>
-
-
-                    <p>
-
-                        Please provide accurate information so we
-
-                        can process your appointment.
-
-                    </p>
-
-
+                    <span class="section-tag">BOOKING INFORMATION</span>
+                    <h2>Tell Us About Yourself</h2>
+                    <p>Please provide accurate information so we can process your appointment.</p>
                 </div>
 
                 <div class="form-section">
-
-
-
-                    <h3>
-
-                        01. Customer Information
-
-                    </h3>
-
-
-
+                    <h3>01. Customer Information</h3>
                     <div class="form-grid">
-
-
-
                         <div class="form-group">
-
-
-
-                            <label for="fullName">
-
-                                Full Name
-
-                                <span>*</span>
-
-                            </label>
-
-
-
-                            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name"
-                                required>
-
+                            <label for="fullName">Full Name <span>*</span></label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
                         </div>
 
-
                         <div class="form-group">
-
-
-
-                            <label for="phone">
-
-                                Contact Number
-
-                                <span>*</span>
-
-                            </label>
-
-
-
+                            <label for="phone">Contact Number <span>*</span></label>
                             <input type="tel" id="phone" name="phone" placeholder="+94 77 123 4567" required>
-
-
                         </div>
 
-
                         <div class="form-group full-width">
-
-
-
-                            <label for="email">
-
-                                Email Address
-
-                                <span>*</span>
-
-                            </label>
-
-
-
+                            <label for="email">Email Address <span>*</span></label>
                             <input type="email" id="email" name="email" placeholder="example@email.com" required>
-
-
-
                         </div>
-
-
                     </div>
-
-
                 </div>
 
                 <div class="form-section">
-
-
-                    <h3>
-
-                        02. Vehicle Information
-
-                    </h3>
-
-
+                    <h3>02. Vehicle Information</h3>
                     <div class="form-grid">
-
-
                         <div class="form-group">
-
-
-                            <label for="vehicleModel">
-
-                                Vehicle Model
-
-                                <span>*</span>
-
-                            </label>
-
-
-                            <input type="text" id="vehicleModel" name="vehicleModel" placeholder="e.g. Toyota Aqua"
-                                required>
-
-
+                            <label for="vehicleModel">Vehicle Model <span>*</span></label>
+                            <input type="text" id="vehicleModel" name="vehicleModel" placeholder="e.g. Toyota Aqua" required>
                         </div>
 
-
                         <div class="form-group">
-
-
-
-                            <label for="licensePlate">
-
-                                License Plate
-
-                                <span>*</span>
-
-                            </label>
-
-
-
-                            <input type="text" id="licensePlate" name="licensePlate" placeholder="e.g. ABC-1234"
-                                required>
-
-
+                            <label for="licensePlate">License Plate <span>*</span></label>
+                            <input type="text" id="licensePlate" name="licensePlate" placeholder="e.g. ABC-1234" required>
                         </div>
 
-
-
                         <div class="form-group">
-
-
-
-                            <label for="vehicleYear">
-
-                                Vehicle Year
-
-                            </label>
-
-
-
+                            <label for="vehicleYear">Vehicle Year</label>
                             <select id="vehicleYear" name="vehicleYear">
-
-
-
-                                <option value="">
-
-                                    Select year
-
-                                </option>
-
-
-
+                                <option value="">Select year</option>
                                 <option>2026</option>
-
                                 <option>2025</option>
-
                                 <option>2024</option>
-
                                 <option>2023</option>
-
                                 <option>2022</option>
-
                                 <option>2021</option>
-
                                 <option>2020</option>
-
                                 <option>2019</option>
-
                                 <option>2018</option>
-
                                 <option>2017</option>
-
                                 <option>2016</option>
-
                                 <option>2015</option>
-
                                 <option>2014</option>
-
                                 <option>2013</option>
-
                                 <option>2012</option>
-
                                 <option>2011</option>
-
                                 <option>2010</option>
-
-
-
                             </select>
-
-
-
                         </div>
-
 
                         <div class="form-group">
-
-
-
-                            <label for="vehicleType">
-
-                                Vehicle Type
-
-                            </label>
-
-
-
+                            <label for="vehicleType">Vehicle Type</label>
                             <select id="vehicleType" name="vehicleType">
-
-
-
-                                <option value="">
-
-                                    Select type
-
-                                </option>
-
-
-
-                                <option value="car">
-
-                                    Car
-
-                                </option>
-
-
-
-                                <option value="suv">
-
-                                    SUV
-
-                                </option>
-
-
-
-                                <option value="van">
-
-                                    Van
-
-                                </option>
-
-
-
-                                <option value="motorcycle">
-
-                                    Motorcycle
-
-                                </option>
-
-
+                                <option value="">Select type</option>
+                                <option value="car">Car</option>
+                                <option value="suv">SUV</option>
+                                <option value="van">Van</option>
+                                <option value="motorcycle">Motorcycle</option>
                             </select>
-
                         </div>
-
-
                     </div>
-
-
                 </div>
 
                 <div class="form-section">
-
-
-
-                    <h3>
-
-                        03. Appointment Details
-
-                    </h3>
-
-
-
+                    <h3>03. Appointment Details</h3>
                     <div class="form-grid">
-
-
-
                         <div class="form-group">
-
-
-
-                            <label for="bookingDate">
-
-                                Preferred Service Date
-
-                                <span>*</span>
-
-                            </label>
-
-
-
+                            <label for="bookingDate">Preferred Service Date <span>*</span></label>
                             <input type="date" id="bookingDate" name="bookingDate" required>
-
-
-
                         </div>
-
 
                         <div class="form-group">
-
-
-
-                            <label for="timeSlot">
-
-                                Preferred Time
-
-                                <span>*</span>
-
-                            </label>
-
-
-
+                            <label for="timeSlot">Preferred Time <span>*</span></label>
                             <select id="timeSlot" name="timeSlot" required>
-
-
-
-                                <option value="">
-
-                                    Select time
-
-                                </option>
-
-
-
-                                <option>
-
-                                    08:00 AM - 10:00 AM
-
-                                </option>
-
-
-
-                                <option>
-
-                                    10:00 AM - 12:00 PM
-
-                                </option>
-
-
-
-                                <option>
-
-                                    01:00 PM - 03:00 PM
-
-                                </option>
-
-
-
-                                <option>
-
-                                    03:00 PM - 05:00 PM
-
-                                </option>
-
-
-
+                                <option value="">Select time</option>
+                                <option>08:00 AM - 10:00 AM</option>
+                                <option>10:00 AM - 12:00 PM</option>
+                                <option>01:00 PM - 03:00 PM</option>
+                                <option>03:00 PM - 05:00 PM</option>
                             </select>
-
-
-
                         </div>
-
 
                         <div class="form-group full-width">
-
-
-
-                            <label for="notes">
-
-                                Additional Notes
-
-                            </label>
-
-
-
-                            <textarea id="notes" name="notes" rows="4"
-                                placeholder="Tell us about any specific issue with your vehicle..."></textarea>
-
-
-
+                            <label for="notes">Additional Notes</label>
+                            <textarea id="notes" name="notes" rows="4" placeholder="Tell us about any specific issue with your vehicle..."></textarea>
                         </div>
-
                     </div>
-
                 </div>
 
                 <div class="terms">
-
-
-
                     <label class="checkbox-container">
-
-
-
                         <input type="checkbox" id="terms" required>
-
-
-
                         <span class="checkmark"></span>
-
-
-
                         <span class="terms-text">
-
-                            I confirm that the information provided
-
-                            is correct and I agree to the booking
-
-                            terms and conditions.
-
+                            I confirm that the information provided is correct and I agree to the booking terms and conditions.
                         </span>
-
-
-
                     </label>
-
-
-
                 </div>
-
 
                 <div class="form-actions">
-
-
-
-                    <a href="service-details.html" class="back-button">
-
-                        ← Back
-
-                    </a>
-
-
+                    <a id="back-button" href="serviceDetails.html" class="back-button">← Back</a>
 
                     <button type="submit" class="continue-button">
-
                         Continue to Payment
-
                         <span>→</span>
-
                     </button>
-
-
-
                 </div>
-
-
-
             </div>
 
+            <!-- Summary Card -->
             <aside class="summary-card">
-
-
-
                 <div class="summary-header">
-
-
-
-                    <span class="small-label">
-
-                        YOUR BOOKING
-
-                    </span>
-
-
-
-                    <h2>
-
-                        Service Summary
-
-                    </h2>
-
-
-
+                    <span class="small-label">YOUR BOOKING</span>
+                    <h2>Service Summary</h2>
                 </div>
-
-
-
-
 
                 <div class="selected-service">
-
-
-
-                    <img src="https://images.unsplash.com/photo-1632823469850-1f77d8c9a0b7?auto=format&fit=crop&w=500&q=80"
-                        alt="Full Engine Service">
-
-
-
+                    <img id="summary-img" src="images/full engine.jpg" alt="Service Image">
                     <div>
-
-
-
-                        <span class="service-category">
-
-                            Maintenance
-
-                        </span>
-
-
-
-                        <h3>
-
-                            Full Engine Service
-
-                        </h3>
-
-
-
-                        <p>
-
-                            Complete engine inspection
-
-                            and maintenance.
-
-                        </p>
-
-
-
+                        <span id="summary-category" class="service-category">Maintenance</span>
+                        <h3 id="summary-name">Full Engine Service</h3>
+                        <p id="summary-desc">Complete engine inspection and maintenance.</p>
                     </div>
-
-
-
                 </div>
-
-
-
 
                 <div class="summary-details">
-
-
-
                     <div class="summary-row">
-
-
-
-                        <span>
-
-                            Estimated Time
-
-                        </span>
-
-
-
-                        <strong>
-
-                            2 Hours
-
-                        </strong>
-
-
-
+                        <span>Estimated Time</span>
+                        <strong id="summary-time">2 Hours</strong>
                     </div>
 
-
-
-
-
                     <div class="summary-row">
-
-
-
-                        <span>
-
-                            Service Price
-
-                        </span>
-
-
-
-                        <strong>
-
-                            Rs. 10,000
-
-                        </strong>
-
-
-
+                        <span>Service Price</span>
+                        <strong id="summary-price">Rs. 10,000</strong>
                     </div>
 
-
-
-
-
                     <div class="summary-row">
-
-
-
-                        <span>
-
-                            Booking Deposit
-
-                        </span>
-
-
-
-                        <strong>
-
-                            Rs. 2,000
-
-                        </strong>
-
-
-
+                        <span>Booking Deposit</span>
+                        <strong id="summary-deposit">Rs. 2,000</strong>
                     </div>
-
-
-
                 </div>
-
-
-
-
 
                 <div class="payment-summary">
-
-
-
                     <div class="payment-row">
-
-
-
-                        <span>
-
-                            Service Total
-
-                        </span>
-
-
-
-                        <strong>
-
-                            Rs. 10,000
-
-                        </strong>
-
-
-
+                        <span>Service Total</span>
+                        <strong id="summary-total">Rs. 10,000</strong>
                     </div>
-
-
-
-
 
                     <div class="payment-row deposit">
-
-
-
-                        <span>
-
-                            Pay Now
-
-                        </span>
-
-
-
-                        <strong>
-
-                            Rs. 2,000
-
-                        </strong>
-
-
-
+                        <span>Pay Now</span>
+                        <strong id="summary-pay-now">Rs. 2,000</strong>
                     </div>
 
-
-
-
-
-                    <p>
-
-                        The remaining Rs. 8,000 will be payable
-
-                        at the service center.
-
+                    <p id="summary-balance-note">
+                        The remaining Rs. 8,000 will be payable at the service center.
                     </p>
-
-
-
                 </div>
-
-
-
-
 
                 <div class="secure-box">
-
-
-
-                    <span class="secure-icon">
-
-                        🔒
-
-                    </span>
-
-
-
+                    <span class="secure-icon">🔒</span>
                     <div>
-
-
-
-                        <strong>
-
-                            Secure Booking
-
-                        </strong>
-
-
-
-                        <p>
-
-                            Your information is securely protected.
-
-                        </p>
-
-
-
+                        <strong>Secure Booking</strong>
+                        <p>Your information is securely protected.</p>
                     </div>
-
-
-
                 </div>
-
-
-
             </aside>
-
-
-
         </div>
-
-
-
     </main>
 
-
     <footer class="footer">
-
-
-
         <div class="container footer-content">
-
-
-
-
-
             <div class="footer-brand">
-
-
-
                 <a href="index.html" class="logo">
-
-
-
-                    <span class="logo-icon">
-
-                        ⚙
-
-                    </span>
-
-
-
-                    <span>
-
-                        AutoCare
-
-                    </span>
-
-
-
+                    <span class="logo-icon">⚙</span>
+                    <span>AutoCare</span>
                 </a>
-
-
-
-                <p>
-
-                    Professional vehicle maintenance and repair
-
-                    services you can trust.
-
-                </p>
-
-
-
+                <p>Professional vehicle maintenance and repair services you can trust.</p>
             </div>
-
-
-
-
 
             <div class="footer-column">
-
-
-
-                <h3>
-
-                    Quick Links
-
-                </h3>
-
-
-
-                <a href="index.html">
-
-                    Home
-
-                </a>
-
-
-
-                <a href="index.html#services">
-
-                    Services
-
-                </a>
-
-
-
-                <a href="index.html#about">
-
-                    About Us
-
-                </a>
-
-
-
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#about">About Us</a>
             </div>
-
-
-
-
 
             <div class="footer-column">
-
-
-
-                <h3>
-
-                    Contact
-
-                </h3>
-
-
-
-                <p>
-
-                    📞 +94 77 123 4567
-
-                </p>
-
-
-
-                <p>
-
-                    ✉ info@autocare.lk
-
-                </p>
-
-
-
-                <p>
-
-                    📍 Colombo, Sri Lanka
-
-                </p>
-
-
-
+                <h3>Contact</h3>
+                <p>📞 +94 77 123 4567</p>
+                <p>✉ info@autocare.lk</p>
+                <p>📍 Colombo, Sri Lanka</p>
             </div>
-
-
-
         </div>
-
-
-
-
 
         <div class="footer-bottom">
-
-
-
-            <p>
-
-                © 2026 AutoCare Vehicle Service Center.
-
-                All Rights Reserved.
-
-            </p>
-
-
-
+            <p>© 2026 AutoCare Vehicle Service Center. All Rights Reserved.</p>
         </div>
-
-
-
     </footer>
 
-
-
-</body>
-
-
-
-
-</html>
+    <script src="../Backend/booking.js"></script>
 
 </body>
 

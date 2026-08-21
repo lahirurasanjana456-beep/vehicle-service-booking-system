@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="page-title">Service Details</title>
+
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/serviceDetails.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">⚙</span>
+                    <span>AutoCare</span>
+                </a>
+
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#services" class="active">Services</a>
+                    <a href="index.html#about">About Us</a>
+                    <a href="index.html#contact">Contact</a>
+                </nav>
+
+                <a href="index.html#services" class="nav-button">
+                    Book a Service
+                </a>
+            </div>
+        </header>
+
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>›</span>
+                    <a href="index.html#services">Services</a>
+                    <span>›</span>
+                    <span id="breadcrumb-title">Full Engine Service</span>
+                </div>
+
+                <h1 id="service-name">
+                    Full Engine Service
+                </h1>
+
+                <p id="service-subtitle">
+                    Complete inspection and maintenance for better
+                    engine performance and reliability.
+                </p>
+            </div>
+        </section>
+
+        <main class="details-section">
+            <div class="container details-grid">
+                <div class="details-left">
+                    <div class="main-image">
+                        <img id="service-img" src="images/full engine.jpg" alt="Service Image" class="js-main-image">
+                        <span id="service-badge" class="category-badge">
+                            Maintenance
+                        </span>
+                    </div>
+
+                    <div class="description-card">
+                        <h2>About This Service</h2>
+                        <div id="service-description">
+                            <!-- Loaded dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="included-card">
+                        <h2>What's Included</h2>
+                        <div id="included-container" class="included-grid">
+                            <!-- Loaded dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="notice-card">
+                        <div class="notice-icon">i</div>
+                        <div>
+                            <h3>Important Information</h3>
+                            <p>
+                                Additional parts or repairs identified during
+                                inspection may have separate charges. Our
+                                technician will inform you before performing
+                                any additional work.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="booking-card">
+                    <div class="booking-top">
+                        <span class="small-label">
+                            SERVICE PRICE
+                        </span>
+                        <div id="service-price" class="price">
+                            Rs. 10,000
+                        </div>
+                        <div class="price-note">
+                            Starting price
+                        </div>
+                    </div>
+
+                    <div class="service-information">
+                        <div class="info-row">
+                            <span class="info-label">Category</span>
+                            <strong id="info-category">Maintenance</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span class="info-label">Estimated Time</span>
+                            <strong id="info-time">2 Hours</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span class="info-label">Service Type</span>
+                            <strong id="info-type">Full Service</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span class="info-label">Booking Deposit</span>
+                            <strong id="info-deposit">Rs. 2,000</strong>
+                        </div>
+                    </div>
+
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span id="service-rating">4.9 / 5</span>
+                        <span id="service-reviews" class="reviews">(126 reviews)</span>
+                    </div>
+
+                    <a id="book-now-btn" href="booking.html" class="book-button">
+                        Book This Service
+                        <span>→</span>
+                    </a>
+
+                    <a href="index.html#services" class="back-button">
+                        ← Back to Services
+                    </a>
+
+                    <div class="trust-section">
+                        <div class="trust-item">
+                            <span class="trust-icon">✓</span>
+                            <span>Professional Technicians</span>
+                        </div>
+
+                        <div class="trust-item">
+                            <span class="trust-icon">✓</span>
+                            <span>Transparent Pricing</span>
+                        </div>
+
+                        <div class="trust-item">
+                            <span class="trust-icon">✓</span>
+                            <span>Secure Online Booking</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">⚙</span>
+                        <span>AutoCare</span>
+                    </a>
+                    <p>
+                        Professional vehicle maintenance and repair
+                        services you can trust.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="index.html#services">Services</a>
+                    <a href="index.html#about">About Us</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>📞 +94 77 123 4567</p>
+                    <p>✉ info@autocare.lk</p>
+                    <p>📍 Colombo, Sri Lanka</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 AutoCare Vehicle Service Center. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <script src="../Backend/serviceDetails.js"></script>
+
+    </body>
+</html>    
